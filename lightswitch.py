@@ -3,19 +3,20 @@ def aanUit():
     global lichtAanOfUit
     if lichtAanOfUit == True:
         lichtAanOfUit = False
+        print("light is off")
+        button["text"] = "Switch Light On"
     elif lichtAanOfUit == False:
         lichtAanOfUit = True
-    print(lichtAanOfUit)
+        print("light is on")
+        button["text"] = "Switch Light Off"
+    
 
 window = tk.Tk()
-button = tk.Button(text='lichtknopje', bg="white", fg="black", command=aanUit)
+button = tk.Button(text='Switch Light Off', bg="white", fg="black", command=aanUit)
 button.pack(pady = 20, padx = 20)
 
 # schijf hier tussen je code
 lichtAanOfUit = True
-greeting = tk.Label(text="text")
-greeting.pack()
-print("no")
 # schijf hier tussen je code
 
 window.mainloop()
