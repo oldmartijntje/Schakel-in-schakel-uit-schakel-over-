@@ -14,7 +14,7 @@ document.body.appendChild(btn);
 var button = document.querySelector('button');
 button.onclick = function() {
   //do stuff
-  alert("button was clicked");
+  console.log("button was clicked");
 }
 
 // schijf hier tussen je code
