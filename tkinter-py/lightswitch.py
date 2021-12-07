@@ -12,12 +12,12 @@ def aanUit():
         button["text"] = "Switch Light Off"
         window["bg"] = "yellow"
     
-
 window = tk.Tk()
 window.geometry('300x200')
 window.configure(bg='yellow')
 button = tk.Button(text='Switch Light Off', bg="white", fg="black", command=aanUit)
 button.pack(pady = 20, padx = 20)
+
 # schijf hier tussen je code
 window.title("what if i don't want the title to be TK?")
 lichtAanOfUit = True
