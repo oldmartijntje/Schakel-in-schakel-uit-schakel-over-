@@ -1,6 +1,18 @@
-function myFunction() {
-    document.getElementById("btn").innerHTML = "Hello World";
-    document.getElementById("btn").style.color = "red";
+function myFunction(lightOnOrOff) {
+    
+    if (lightOnOrOff == "on")  
+    {
+      lightOnOrOff = "off";
+      console.log("The light has been turned off");
+      document.body.style.backgroundColor = "black";
+    }
+    else if (lightOnOrOff == "off")  
+    {
+      lightOnOrOff = "on";
+      console.log("The light has been turned on");
+      document.body.style.backgroundColor = "yellow";
+    }
+    return lightOnOrOff
   }
 
 var btn = document.createElement('button');
@@ -10,11 +22,12 @@ document.body.appendChild(btn);
 
   
 // schijf hier tussen je code
-
+document.body.style.backgroundColor = "black";
+var lightOnOrOff = "off";
 var button = document.querySelector('button');
 button.onclick = function() {
   //do stuff
-  console.log("button was clicked");
+  lightOnOrOff = myFunction(lightOnOrOff)
 }
 
 // schijf hier tussen je code
