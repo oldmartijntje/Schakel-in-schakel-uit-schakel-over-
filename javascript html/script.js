@@ -5,19 +5,21 @@ function myFunction(lightOnOrOff) {
       lightOnOrOff = "off";
       console.log("The light has been turned off");
       document.body.style.backgroundColor = "black";
+      btn.innerHTML = 'Turn The Light On';
     }
     else if (lightOnOrOff == "off")  
     {
       lightOnOrOff = "on";
       console.log("The light has been turned on");
       document.body.style.backgroundColor = "yellow";
+      btn.innerHTML = 'Turn The Light Off';
     }
     return lightOnOrOff
   }
 
 var btn = document.createElement('button');
 btn.style.margin = '10px';
-btn.innerHTML = 'button';
+btn.innerHTML = 'Turn The Light On';
 document.body.appendChild(btn);
 
   
