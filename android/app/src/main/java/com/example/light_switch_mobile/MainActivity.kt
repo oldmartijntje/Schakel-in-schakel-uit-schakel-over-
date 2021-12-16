@@ -15,9 +15,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main);
+        getSupport
 
-        val button = findViewById<Button>(R.id.Button1);
-        button.setText("...");
 
         // schijf hier tussen je (setup) code
 
