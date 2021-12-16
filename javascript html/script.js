@@ -14,10 +14,12 @@ function myFunction(values) {
     {
       compact(values, 'on', 'The light has been turned on', 'yellow', 'Turn The Light Off')
     }
+    /*
     values[1] += 1
     if (values[1] > 15){
       window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank').focus();
     }
+    */
     return values
   }
 
